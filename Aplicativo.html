@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+    <div class="feedbackcontainer">
+        <h2>Formulário de Feedback</h2>
+        <form action="feedbackaction.php" method="POST">
+            <div class="inputgroup">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+            
+            <div class="inputgroup">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="inputgroup">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" placeholder="Deixe seu feedback" required></textarea>
+            </div>
+            
+            <button type="submit" class="submitbtn">Enviar Feedback</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: grid;  
+    justify-items: center;  
+    align-items: center;  
+    height: 100vh;
+    background-image: url(CAPIBARAA.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feedbackcontainer {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: grid;  
+    grid-template-columns: 1fr;  
+    grid-gap: 20px;  
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px; 
+
+}
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #864214;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65c00;  
+}
+
+
+@media (min-width: 768px) {
+    .feedbackcontainer {
+        grid-template-columns: 1fr 1fr;  
+        max-width: 600px;  
+    }
+    
+    h1 {
+        font-size: 28px;  
+    }
+    
+    input, textarea {
+        font-size: 18px;  
+    }
+
+    button {
+        font-size: 18px;  
+    }
+}
